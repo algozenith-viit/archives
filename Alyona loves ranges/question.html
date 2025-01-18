@@ -1,0 +1,46 @@
+<h2>Problem: Alyona Loves Ranges! </h2>
+    <p>Alyona always plays with the numbers and the numbers that are between two numbers. Alyona's teacher notices this thing and gives her a mini assesment in that, The teacher will give her a 
+        number N and two more number L and R. Alyona has to find the number of numbers between L and R. And asks her to find the least possible number which is the range L & R, let's call that number as 'x' and the find gcd(n,x) such that that number is also in the range [L,R]
+        As alyona is little busy, she needs your help to solve this problem!
+    </p>
+
+    <p><strong>Input Specification:</strong></p>
+    <ul>
+        <li><strong>input1</strong>: The number of test cases t <strong>(1 <=  t <= 10<sup>5</sup>)</strong></li>
+        <li><strong>input2</strong>: The number that is given by teacher N <strong>(1 <= N <= 10<sup>9</sup>)</strong>.</li>  
+        <li><strong>input3</strong>: The start and end numbers in the range L,R <strong>(1 <= L,R <= 10<sup>9</sup>)</strong>.</li>  
+    </ul>
+
+    <p><strong>Output Specification:</strong></p>
+    <p>Print the number which satisifies the conditions mentioned, If there is not valid number, print -1</p>
+
+    <p><strong>Example</strong></p>
+    <p><strong>Input</strong></p>
+    <pre>
+        4
+        6 5 7
+        16 1 6
+        10 1 10
+        2 3 4
+    </pre>
+
+    <p><strong>Output</strong></p>
+    <pre>
+        6
+        1
+        1
+        -1
+    </pre>
+
+    <p><strong>Explanation</strong></p>
+    <ul>
+        <li>
+            In test case 1, The number 6 is the least number in the range [5,7] and gcd(6,6) = 6 which is also in the range [5,7]
+        </li>
+        <li>
+            In test case 2, The number 1 is the least number in the range [1,6] and gcd(16,1) = 1 which is also in the range [1,6]
+        </li>
+        <li>
+            In test case 4, The number 2 doesn't satisfy the condition because gcd(2,3) = 1 and gcd(2,4) = 2, but 2 is not in the range [3,4]. Hence, the output is -1.
+        </li>
+    </ul>
