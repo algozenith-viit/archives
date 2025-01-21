@@ -1,0 +1,13 @@
+Small Plants
+1. Water needed for 10 small plants: 2 liters/plant * 10 plants = 20 liters
+
+Medium Plants
+1. Water needed for 3 medium plants: 5 liters/plant * 3 plants = 15 liters
+2. Since the number of medium plants (3) is odd, add 1 extra liter/plant: 1 liter/plant * 3 plants = 3 liters
+3. Total water needed for medium plants: 15 liters + 3 liters = 18 liters
+
+Large Plants
+1. Water needed for 2 large plants: 10 liters/plant * 2 plants = 20 liters
+
+Total Water Needed
+1. Add the water needed for all plants: 20 liters (small) + 18 liters (medium) + 20 liters (large) = 58 liters

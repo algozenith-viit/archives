@@ -1,0 +1,3 @@
+- S = 20 (small plants)
+- M = 4 (medium plants)
+- L = 3 (large plants)
