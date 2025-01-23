@@ -1,0 +1,62 @@
+<h2>Cookie cravings</h2>
+    <p>
+        You love the cookies that are chocolate flavoured meanwhile you friend likes the cookies which are vanilla flavoured one a fine day, you both visit to a bakery shop near by.
+        The baker cooks four types of cookies! <br>
+        1) Chocolate flavoured cookies (You like the most!, your friend wont like it!) <br>
+        2) Vanilla flavoured cookies (You hate the most!, your friend likes it!) <br>
+        3) Chocolate and Vanilla flavoured cookies (Both of you like it!) <br>
+        4) Plain cookies (Both of you hate it!) <br>
+        The baker is some emotional, That he will stop baking the cookies if one of you leaves the shop.
+        Initally the intresent of cookies is 0.
+        You can increase you interest by picking the cookies you like and decrease the interest by picking the cookies you hate.
+        one of you will leave the shop if the interest on the cookies is less than 0. 
+        Find the maximum number of cookies you and you friend can eat.<br>
+        <strong>Note : The cookie that is liked by both can be shared and their intrestes on cookies increases by one for both but in other cases if one like the cookie, then the person who likes the cookie will increase intresent on cookie other's decrease their interest!
+            If both dont like a particular cookie then both intrestes decreases by one.
+        </strong> 
+    </p>
+
+    <p><strong>Input Specification:</strong></p>
+    <ul>
+        <li><code>t</code>: The number of test cases. (1 <= <code>t</code> <= 10<sup>4</sup>)</li>
+        <li><code>a</code>: The number of chocolate and vanilla mixed flavoured cookies.(this cookie is shared by both of you)</li>
+        <li><code>b</code>: The number of vanilla cookies.</li>
+        <li><code>c</code>: The number of chocolate cookies.</li>
+        <li><code>d</code>: The number of cookies you both hate</li>
+        <li>0 <= <code>a,b,c,d</code> <= 10<sup>8</sup> (a+b+c+d ≥ 1)</li>
+    </ul>
+
+    <p><strong>Output Specification:</strong></p>
+    <p>Print the number maximum cookies you both can eat! till one of you leave the shop (or) till no cookies sre left</p>
+
+    <p><strong>Example</strong></p>
+    <p><strong>Input</strong></p>
+    <pre>
+        4
+        5 0 0 0
+        0 0 0 5
+        2 5 10 6
+        3 0 0 7        
+    </pre>
+
+    <p><strong>Output</strong></p>
+    <pre>
+        5
+        1
+        15
+        7        
+    </pre>
+
+    <p><strong>Explanation</strong></p>
+    <ul>
+        <li>
+            In test case 1, There are only chocolate cookies, you can eat all the cookies.  
+        </li>
+        <li>
+            In test case 2, There are no cookies of your interest and your friend intrest, eating one of the cookies that aren't liked by you (or) your friend will decrease the intrest of cookies less than 0 such that one of you will leave the shop.
+        </li>
+        <li>
+            In test case 4, initally eating the mixed cookie will increase both of your intrest by 3 and taking the cookie till the person goes to negative intrest this takes 4 cookies!
+            so, in total you and your friend eat 7 cookies.
+        </li>
+    </ul>
