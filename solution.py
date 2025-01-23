@@ -20,7 +20,7 @@ Output: 9
 n = int(input())
 temp = n * (n+1)
 res = (temp // 2)* (temp // 2)
-return res
+print(res)
 
 # for input 3: 
 #(1)^3 + (2)^3 + (3)^3 = 36  (general method).
