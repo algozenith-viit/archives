@@ -1,24 +1,95 @@
-<h2>Problem:  gifts needed for Vignan contributors</h2>
-<p>Your task is to find the total number of gifts needed for Vignan contibutors such that for given N number of contibutors where valued from 1 to N numbers and requires gifts based on their values such that each contributor gets number of gifts equal to cube of value of respected contributor.</p>
-
-<p><strong>Note:</strong> Return the output.</p>
-
-<p><strong>Input Specification:</strong></p>
-<ul>
-    <li><strong>input1</strong>: An integer value <strong>N</strong>.</li>
-</ul>
-
-<p><strong>Output Specification:</strong></p>
-<p>Return an integer value representing the total number of gifts needed for N number of contributors.</p>
-
-<p><strong>Example 1:</strong></p>
-<p><strong>Input:</strong> 3</p>
-<p><strong>Output:</strong>36 </p>
-
-<p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> 2</p>
-<p><strong>Output:</strong> 9</p>
-
-<p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> 4</p>
-<p><strong>Output:</strong> 100</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .constraints {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h3><em>Problem:</em></h3>
+    <p>A group of friends went for a birthday party. The birthday girl, <em>B</em>, has a certain budget to spend on multiple categories of the bill (e.g., food, drinks, cake). However, <strong>B</strong> can only pay part of the bill for each category. If the total bill exceeds her budget, the remaining amount must be paid by the other friends in the group.</p>
+    <ul>
+        <li>The bill is divided into <code>c</code> categories (1 ≤ c ≤ 10), each with a different cost.</li>
+        <li><em>B</em> can contribute to part of the bill, but not all of it. The contribution to each category is provided.</li>
+        <li>After <em>B</em> pays for her share in each category, the remaining amount needs to be split equally among the other friends, but with a catch:
+            <ul>
+                <li>If the remaining amount cannot be equally divided, the extra balance must be shared by the friends in <em>priority order</em>.</li>
+                <li><em>Priority</em> is defined by the number of items ordered or special contribution by a friend (e.g., someone who ordered more drinks or was a better friend).</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>You are given the following:</h4>
+    <ul>
+        <li><code>n</code>: the number of friends excluding <em>B</em>.</li>
+        <li><code>c</code>: the number of categories in the bill.</li>
+        <li><code>m[i]</code>: the price for the i-th category.</li>
+        <li><code>b[i]</code>: the contribution of <em>B</em> to the i-th category.</li>
+        <li><code>p[i]</code>: the priority value for the i-th friend (higher values represent friends who volunteered to pay more).</li>
+    </ul>
+    <h4><em>Input Format:</em></h4>
+    <ul>
+        <li>An integer <code>n</code> (1 ≤ n ≤ 100) – the number of friends excluding <em>B</em>.</li>
+        <li>An integer <code>c</code> (1 ≤ c ≤ 10) – the number of categories.</li>
+        <li>A list of <code>c</code> integers <code>m[i]</code> representing the prices of each category.</li>
+        <li>A list of <code>c</code> integers <code>b[i]</code> representing the contribution of <em>B</em> to each category.</li>
+        <li>A list of <code>n</code> integers <code>p[i]</code> representing the priority value for each friend.</li>
+    </ul>
+    <h4><em>Output Format:</em></h4>
+    <p>Print the amount each friend will pay, space-separated.</p>
+    <div class="constraints">
+        <h4><em>Constraints:</em></h4>
+        <ul>
+            <li>1 ≤ <code>n</code> ≤ 100</li>
+            <li>1 ≤ <code>c</code> ≤ 10</li>
+            <li>−10<sup>4</sup> ≤ <code>a[i]</code>, <code>b[i]</code> ≤ 10<sup>4</sup></li>
+            <li>1 ≤ <code>p[i]</code> ≤ 100</li>
+        </ul>
+    </div>
+    <h4><em>Example:</em></h4>
+    <div class="example">
+        <h5><em>Input 1:</em></h5>
+        <pre>
+4
+3
+5000 3000 2000
+2001 1030 567
+10 20 30 40
+        </pre>
+        <h5><em>Output 1:</em></h5>
+        <pre>
+1599 1600 1601 1602
+        </pre>
+        <p><strong>Explanation:</strong></p>
+        <ul>
+            <li>There are 4 friends excluding <em>B</em>.</li>
+            <li>The categories are food, drinks, and cake, with prices 5000, 3000, and 2000 respectively.</li>
+            <li><em>B</em>'s contributions are 2001, 1030, and 567 for each category respectively.</li>
+            <li>The remaining balances are distributed equally among the friends, and any leftover amounts are distributed according to priority values.</li>
+            <li>The friends' priorities are 10, 20, 30, and 40, meaning Friend 4 (highest priority) receives extra amounts from any remainder.</li>
+        </ul>
+    </div>
+</body>
+</html>
