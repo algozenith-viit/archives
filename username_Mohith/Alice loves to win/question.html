@@ -1,0 +1,53 @@
+<h2>Problem: Crazy XOR </h2>
+    <p>
+        Assuming you are friend of Alice.
+        Alice always wanted beat Bob all time, but every time bob used to win. Now they have a challenge to find the number of unique paths in a grid such that the xor of path followed is 0. The path is followed from the cell (1,1) to (row,col) in one move you can move either one step right or one step down.
+        i.e if you are currently at cell (x,y) you can move to either (x+1,y) or (x,y+1) <strong>iff</strong> (x < row and y < col). As alice is weak in these type of challenges and asked you help to win this round. Help Alice in this round to beat Bob.
+    </p>
+
+    <p><strong>Input Specification:</strong></p>
+    <ul>
+        <li><strong>input1</strong>: The number of test cases t <strong>(1 <=  t <= 10<sup>3</sup>)</strong></li>
+        <li><strong>input2</strong>: The number of rows and number of columns <strong>(1 <= r,c <= 10<sup>3</sup>)</strong>.</li>  
+        <li><strong>input3</strong>: The value of the element at every cell <strong>(1 <= matrix[i][j] <= 10<sup>3</sup>)</strong>.</li>  
+        <li><strong>note</strong> r*c <= 1000</li>
+    </ul>
+
+    <p><strong>Output Specification:</strong></p>
+    <p>Print the number of unique paths such that xor of those paths followed is 0.</p>
+
+    <p><strong>Example</strong></p>
+    <p><strong>Input</strong></p>
+    <pre>
+        2
+
+        3 2
+        1 2
+        1 2
+        1 1
+
+        3 3
+        0 0 0
+        0 0 0
+        0 0 0
+    </pre>
+
+    <p><strong>Output</strong></p>
+    <pre>
+        2
+        6
+    </pre>
+
+    <p><strong>Explanation</strong></p>
+    <ul>
+        <li>
+            In test case 1<br>
+            The number of unique paths such that xor of those paths followed is 0 are 2.<br>
+            If you follow the path (1,1) -> (2,1) -> (3,1) -> (3,2) xor is 0.<br>
+            If you follow the path (1,1) -> (1,2) -> (2,2) -> (3,2) xor is 0. 
+        </li>
+        <li>
+            In test case 2<br>
+            The number of unique paths with xor 0 are 6.
+        </li>
+    </ul>

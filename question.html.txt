@@ -1,0 +1,24 @@
+<h2>Problem:  gifts needed for Vignan contributors</h2>
+<p>Your task is to find the total number of gifts needed for Vignan contibutors such that for given N number of contibutors where valued from 1 to N numbers and requires gifts based on their values such that each contributor gets number of gifts equal to cube of value of respected contributor.</p>
+
+<p><strong>Note:</strong> Return the output.</p>
+
+<p><strong>Input Specification:</strong></p>
+<ul>
+    <li><strong>input1</strong>: An integer value <strong>N</strong>.</li>
+</ul>
+
+<p><strong>Output Specification:</strong></p>
+<p>Return an integer value representing the total number of gifts needed for N number of contributors.</p>
+
+<p><strong>Example 1:</strong></p>
+<p><strong>Input:</strong> 3</p>
+<p><strong>Output:</strong>36 </p>
+
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> 2</p>
+<p><strong>Output:</strong> 9</p>
+
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> 4</p>
+<p><strong>Output:</strong> 100</p>
